@@ -5,11 +5,11 @@ const BackgroundImageContainer = ({ imageUrl, children }) => {
     backgroundImage: `url(${imageUrl})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    width: "100vw", // 100% del ancho de la ventana del navegador
-    height: "calc(100vh - 100px)", // 100% de la altura de la ventana del navegador menos 200px
+    width: "100vw",
+    height: "calc(100vh - 100px)",
     display: "flex",
-    justifyContent: "center", // Centra horizontalmente el contenido
-    alignItems: "center", // Centra verticalmente el contenido
+    justifyContent: "center",
+    alignItems: "center",
   };
 
   return <div style={containerStyle}>{children}</div>;
