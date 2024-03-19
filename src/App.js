@@ -1,23 +1,19 @@
 // App.js
 
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./screens/home";
 import AboutUs from "./screens/aboutUs";
 import PreviousVersions from "./screens/previousVersions";
 import VirtualSchool from "./screens/vitualSchool";
 import ToolBox from "./screens/toolBox";
 import Contact from "./screens/contact";
+import Header from "./components/header";
 
 const App = () => {
   return (
     <Router>
-      <Link to="/">Home</Link>
-      <Link to="/about_us">About</Link>
-      <Link to="/previous_versions">About</Link>
-      <Link to="/virtual_school">About</Link>
-      <Link to="/tool_box">About</Link>
-      <Link to="/contact">About</Link>
+      <Header />
 
       <Routes>
         <Route path="/home" element={<Home />} />
