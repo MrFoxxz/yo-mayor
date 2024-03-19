@@ -10,7 +10,6 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 
 const pages = [
@@ -43,27 +42,28 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    // <AppBar position="static">
+    <AppBar
+      position="static"
+      sx={{
+        bgcolor: "#004456",
+        boxShadow: "none",
+        height: "100px",
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+          <Box
+            component="section"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
             }}
           >
-            LOGO
-          </Typography>
+            <img src="assets/images/logo.png" alt="logo" />
+          </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -95,36 +95,28 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem
-                  key={page.url}
-                  onClick={handleCloseNavMenu}
-                  component={Link}
-                  to={page.url}
-                >
-                  <Typography textAlign="center">{page.text}</Typography>
+                <MenuItem key={page.url} onClick={handleCloseNavMenu}>
+                  <Link
+                    to={page.url}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {page.text}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+
+          <Box
+            component="section"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
             }}
           >
-            LOGO
-          </Typography>
+            <img src="assets/images/logo.png" alt="logo" />
+          </Box>
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <MenuItem key={page.url} onClick={handleCloseNavMenu}>

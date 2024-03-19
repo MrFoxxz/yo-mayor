@@ -1,0 +1,20 @@
+.containerStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    background-color: #004456;
+    padding: 5px 5px 40px 5px;
+}
+
+.imageStyle {
+    width: '100%';
+    margin-bottom: 10px;
+}
+
+.textStyle {
+    width: calc(100% - 10px);
+    padding: 10px;
+    text-align: 'center';
+    color: white;
+}
