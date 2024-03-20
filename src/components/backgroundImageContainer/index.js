@@ -5,7 +5,7 @@ const BackgroundImageContainer = ({ imageUrl, children }) => {
     backgroundImage: `url(${imageUrl})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    width: "100vw",
+    // width: "100vw",
     height: "calc(100vh - 100px)",
     display: "flex",
     justifyContent: "center",

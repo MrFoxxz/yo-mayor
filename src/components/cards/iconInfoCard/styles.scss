@@ -1,16 +1,29 @@
 .image-container {
-    /* Add styles for the image container here */
     width: 200px;
-    /* Adjust the width as needed */
-    height: auto;
-    margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-container img {
-    /* Add styles for the image here */
     display: block;
-    width: 100%;
+    width: 50px;
     height: auto;
+}
+
+.circleIcon {
+    width: 50px;
+}
+
+.cardNumber {
+    font-size: xxx-large;
+    color: #004456;
+    margin: 20px 0 0 0;
+}
+
+.cardText {
+    font-size: large;
+    color: #0065a4;
+    margin: 0 0 20px 0;
+
 }

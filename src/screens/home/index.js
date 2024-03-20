@@ -14,7 +14,7 @@ const Home = () => {
           <Grid container spacing={3}>
             <Grid item xs={4}>
               <HomeImgCard
-                imageUrl=""
+                imageUrl="assets/images/noticiassub2.png"
                 buttonText="LEER MÁS"
                 text="Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
@@ -27,7 +27,7 @@ const Home = () => {
             </Grid>
             <Grid item xs={4}>
               <HomeImgCard
-                imageUrl=""
+                imageUrl="assets/images/noticiassub1.png"
                 buttonText="LEER MÁS"
                 text="Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
@@ -40,7 +40,7 @@ const Home = () => {
             </Grid>
             <Grid item xs={4}>
               <HomeImgCard
-                imageUrl=""
+                imageUrl="assets/images/Noticiassub3.png"
                 buttonText="LEER MÁS"
                 text="Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
@@ -91,9 +91,13 @@ const Home = () => {
         />
         <div
           className="VContainer"
-          style={{ alignItems: "center", width: "50%" }}
+          style={{
+            alignItems: "center",
+            width: "50%",
+            justifyContent: "center",
+          }}
         >
-          <p>Concurso</p>
+          <p className="blueSubtitle">Concurso</p>
           <div className="HContainer">
             <IconInfoCard
               imageUrl="assets/icons/icono3.png"
@@ -108,6 +112,99 @@ const Home = () => {
               Colombia"
             />
           </div>
+        </div>
+      </div>
+
+      <div className="HContainer">
+        <div
+          className="VContainer"
+          style={{
+            alignItems: "center",
+            width: "50%",
+            justifyContent: "center",
+          }}
+        >
+          <p className="blueSubtitle">Escuela virtual</p>
+          <div className="HContainer">
+            <IconInfoCard
+              imageUrl="assets/icons/icono3.png"
+              number="35.500"
+              text="asistentes al
+              conversatorio"
+            />
+            <IconInfoCard
+              imageUrl="assets/icons/icono1.png"
+              number="24.055"
+              text="asistentes al
+              club de lectura"
+            />
+          </div>
+          <div className="HContainer">
+            <IconInfoCard
+              imageUrl="assets/icons/icono3.png"
+              number="121"
+              text="departamentos
+              de Colombia"
+            />
+            <IconInfoCard
+              imageUrl="assets/icons/icono1.png"
+              number="8"
+              text="países"
+            />
+          </div>
+        </div>
+        <img
+          src="assets/images/impactoyciudades.png"
+          alt="Imagen"
+          className="imageStyle"
+        />
+      </div>
+
+      <div className="sectionTitle">Galería de fotos</div>
+      <Grid container spacing={2}>
+        <Grid item xs={4}>
+          <img
+            src="assets/images/galeriadefotos1.png"
+            alt="Imagen"
+            className="imageGalleryItem"
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <img
+            src="assets/images/galeriadefotos2.png"
+            alt="Imagen"
+            className="imageGalleryItem"
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <img
+            src="assets/images/galeriadefotos3.png"
+            alt="Imagen"
+            className="imageGalleryItem"
+          />
+        </Grid>
+      </Grid>
+
+      <div
+        className="VContainer"
+        style={{
+          marginTop: "70px",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <p className="titleOrganization">Organizan</p>
+        <div className="HContainer">
+          <img
+            src="assets/images/fundacion.png"
+            alt="Imagen"
+            className="OrganizationImgLogo"
+          />
+          <img
+            src="assets/images/saldarriaga.png"
+            alt="Imagen"
+            className="OrganizationImgLogo"
+          />
         </div>
       </div>
     </div>

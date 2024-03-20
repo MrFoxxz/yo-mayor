@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 const HomeImgCard = ({ imageUrl, buttonText, text, onClick }) => {
   return (
     <div className="containerStyle">
-      <img src={imageUrl} alt="Imagen" className="imageStyle" />
+      <img src={imageUrl} alt="Imagen" className="imageStyleCardHome" />
       <p className="textStyle">{text}</p>
       <Button onClick={() => onClick()} variant="contained">
         {buttonText}
