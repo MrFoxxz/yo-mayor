@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import "./styles.scss";
 
@@ -35,7 +35,7 @@ const Footer = () => {
                 textAlign: "center",
               }}
             >
-              <TwitterIcon />
+              <InstagramIcon />
             </Button>
           </Grid>
           <Grid item>
