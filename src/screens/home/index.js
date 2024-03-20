@@ -189,6 +189,7 @@ const Home = () => {
         className="VContainer"
         style={{
           marginTop: "70px",
+          marginBottom: "50px",
           alignItems: "center",
           justifyContent: "center",
         }}

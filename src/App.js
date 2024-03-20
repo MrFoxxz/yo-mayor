@@ -9,6 +9,7 @@ import VirtualSchool from "./screens/vitualSchool";
 import ToolBox from "./screens/toolBox";
 import Contact from "./screens/contact";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/tool_box" element={<ToolBox />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
