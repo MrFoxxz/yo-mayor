@@ -1,20 +1,32 @@
 import React from "react";
 import "./styles.scss";
 
-const DateComponent = ({ date, dateII }) => {
+const DateComponent = ({ date, dateII, border }) => {
   return (
-    <div className="dateComponent VContainer">
+    <div
+      className={`dateComponent VContainer ${
+        border != null ? (border === "top" ? "borderTop" : "borderBottom") : ""
+      }`}
+    >
       <p className="Numberfont">{date}</p>
       {dateII && <p className="Numberfont">{dateII}</p>}
     </div>
   );
 };
 
-const InfoContainer = ({ children, img1, img2, year, yearII, inverse }) => {
+const InfoContainer = ({
+  children,
+  img1,
+  img2,
+  year,
+  yearII,
+  inverse,
+  border,
+}) => {
   if (inverse) {
     return (
       <div className="HContainer">
-        <DateComponent date={year} dateII={yearII} />
+        <DateComponent date={year} dateII={yearII} border={border} />
         <div className="VContainer" style={{ width: "100%" }}>
           <div className="infoContainer">
             <img src={img2} alt="Imagen" className="aboutUsImg" />
@@ -25,6 +37,7 @@ const InfoContainer = ({ children, img1, img2, year, yearII, inverse }) => {
                 alignItems: "center",
                 width: "350px",
                 justifyContent: "center",
+                textAlign: "justify",
               }}
             >
               <img src={img1} alt="Imagen" className="aboutUsImgLogo" />
@@ -42,7 +55,7 @@ const InfoContainer = ({ children, img1, img2, year, yearII, inverse }) => {
   }
   return (
     <div className="HContainer">
-      <DateComponent date={year} dateII={yearII} />
+      <DateComponent date={year} dateII={yearII} border={border} />
       <div className="VContainer" style={{ width: "100%" }}>
         <div className="infoContainer">
           <div
@@ -51,6 +64,7 @@ const InfoContainer = ({ children, img1, img2, year, yearII, inverse }) => {
               alignItems: "center",
               width: "350px",
               justifyContent: "center",
+              textAlign: "justify",
             }}
           >
             <img src={img1} alt="Imagen" className="aboutUsImgLogo" />
@@ -71,19 +85,24 @@ const InfoContainer = ({ children, img1, img2, year, yearII, inverse }) => {
 const Contact = () => {
   return (
     <div className="VContainer">
+      <p className="aboutUsTitle">Quiénes somos</p>
+      <p className="aboutUsSubTitle">línea de tiempo</p>
+  
       <div className="VContainer">
         <InfoContainer
           img1="assets/images/historiasenyomayor1.jpg"
           img2="assets/images/quienessomos1.png"
           year="2011"
+          border="top"
         >
-          <p>
-            La primera versión del concurso se llevó a cabo en <b>2011</b>. En
-            esta, se capacitaron a <b>300</b> adultos mayores de Bogotá y{" "}
-            <b>200</b> de ellos participaron en el concurso con las categorías
-            de cuento escrito y narración oral. Con seis ganadores, se publicó
-            el primer libro Historias en Yo Mayor, en el que se recopilaron{" "}
-            <b>20</b> cuentos escritos.
+          <p className="infoText">
+            La primera versión del concurso se llevó a cabo en{" "}
+            <b className="infoboldText">2011</b>. En esta, se capacitaron a{" "}
+            <b>300</b> adultos mayores de Bogotá y <b>200</b> de ellos
+            participaron en el concurso con las categorías de cuento escrito y
+            narración oral. Con seis ganadores, se publicó el primer libro
+            Historias en Yo Mayor, en el que se recopilaron <b>20</b> cuentos
+            escritos.
           </p>
         </InfoContainer>
 
@@ -93,7 +112,7 @@ const Contact = () => {
           year="2012"
           inverse
         >
-          <p>
+          <p className="infoText">
             En su segunda versión, en 2012, Historias en Yo Mayor llegó a Cali,
             Medellín y Cartagena. Se capacitaron a más de 1800 adultos y se
             recibieron 470 cuentos escritos y 240 narraciones orales. Con 710
@@ -106,7 +125,7 @@ const Contact = () => {
           img2="assets/images/quienesomos3.png"
           year="2013"
         >
-          <p>
+          <p className="infoText">
             En 2013, para la tercera edición del concurso, continuaron
             participando Bogotá, Cali y Medellín y se incluyó al departamento de
             Quindío. En esta versión, concursaron 1012 personas mayores y más de
@@ -121,7 +140,7 @@ const Contact = () => {
           year="2014"
           inverse
         >
-          <p>
+          <p className="infoText">
             En la cuarta versión del concurso se capacitaron 1370 personas. Se
             agregaron dos nuevas categorías: Herencia de mi pueblo, que marcó un
             antes y un después en el concurso al buscar preservar saberes y
@@ -133,7 +152,7 @@ const Contact = () => {
             Macayepo, Ovejas, San Onofre, Sincelejo, San Jacinto y Versalles
             para la categoría de Herencia de mi pueblo.
           </p>
-          <p>
+          <p className="infoText">
             Este año surgieron los laboratorios, que eran espacios permanentes
             donde las personas se reunían una vez a la semana con el objetivo de
             escribir, narrar y compartir un espacio de mejora y corrección
@@ -147,7 +166,7 @@ const Contact = () => {
           year="2015"
           yearII="2016"
         >
-          <p>
+          <p className="infoText">
             Se llevó a cabo entre el <b>2015</b> y <b>2016</b>. En esta edición
             del concurso, se capacitaron <b>200</b> personas, y con respecto al
             año anterior, se sumaron municipios del departamento del Chocó:
@@ -157,7 +176,7 @@ const Contact = () => {
             orales, y participaron <b>80</b> personas en la categoría herencia
             de mi pueblo. Hubo <b>19</b> ganadores.
           </p>
-          <p>
+          <p className="infoText">
             Los laboratorios se volvieron autónomos; es decir, las personas se
             reunían en ausencia de profesores y decidían de forma independiente
             las temáticas, los ejercicios y las conversaciones.
@@ -170,7 +189,7 @@ const Contact = () => {
           yearII="2018"
           inverse
         >
-          <p>
+          <p className="infoText">
             La última edición del concurso de Historias en Yo Mayor tuvo lugar
             entre el 2017 y el 2018. En esta se capacitaron 200 personas, y
             participaron 1250 de Bogotá, Buenaventura y los departamentos de
@@ -179,7 +198,7 @@ const Contact = () => {
             ganadores.
           </p>
           <b>Escuela virtual:</b>
-          <p>
+          <p className="infoText">
             En 2020, debido a la cuarentena implementada por la pandemia de la
             Covid-19, en alianza con el periódico El Tiempo, se creó una escuela
             virtual en la que se enseña a las personas mayores a explorar su
@@ -193,7 +212,7 @@ const Contact = () => {
           img2="assets/images/quienesomos7.png"
           year="2020"
         >
-          <p>
+          <p className="infoText">
             En la primera edición de la Escuela Virtual se capacitaron 200
             adultos mayores. Se publicaron 52 cuentos escritos en un libro
             llamado Heptamerón: memorias de una cuarentena creativa. También
@@ -211,7 +230,7 @@ const Contact = () => {
           year="2021"
           inverse
         >
-          <p>
+          <p className="infoText">
             En este año 176 adultos mayores de Uruguay, Perú, México, Venezuela
             y distintos departamentos de Colombia participaron en la Escuela. 57
             de los cuentos que fueron fruto de su trabajo se recogieron en el
@@ -223,8 +242,9 @@ const Contact = () => {
           img1="assets/images/historiasenyomayor9.jpg"
           img2="assets/images/quienesomos9.png"
           year="2022"
+          border="bottom"
         >
-          <p>
+          <p className="infoText">
             En el 2022 se publicó el Tercer Heptamerón, con 67 historias
             escritas en la Escuela Virtual, que capacitó a 195 personas mayores
             de Colombia, Venezuela, Uruguay y Panamá. En esa edición los clubes
