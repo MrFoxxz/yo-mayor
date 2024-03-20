@@ -83,7 +83,10 @@ const Home = () => {
 
       <div className="sectionTitle">Impacto: personas y ciudades</div>
 
-      <div className="HContainer">
+      <div
+        className="HContainer"
+        style={{ alignItems: "center", justifyContent: "space-around" }}
+      >
         <img
           src="assets/images/impactopersonas.png"
           alt="Imagen"
@@ -93,7 +96,7 @@ const Home = () => {
           className="VContainer"
           style={{
             alignItems: "center",
-            width: "50%",
+            // width: "50%",
             justifyContent: "center",
           }}
         >
@@ -115,12 +118,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="HContainer">
+      <div
+        className="HContainer"
+        style={{ alignItems: "center", justifyContent: "space-around" }}
+      >
         <div
           className="VContainer"
           style={{
             alignItems: "center",
-            width: "50%",
+            // width: "50%",
             justifyContent: "center",
           }}
         >
@@ -161,22 +167,22 @@ const Home = () => {
       </div>
 
       <div className="sectionTitle">Galería de fotos</div>
-      <Grid container spacing={2}>
-        <Grid item xs={4}>
+      <Grid container justifyContent="center" spacing={2}>
+        <Grid justifyContent="center" item xs={12} sm={6} md={4}>
           <img
             src="assets/images/galeriadefotos1.png"
             alt="Imagen"
             className="imageGalleryItem"
           />
         </Grid>
-        <Grid item xs={4}>
+        <Grid justifyContent="center" item xs={12} sm={6} md={4}>
           <img
             src="assets/images/galeriadefotos2.png"
             alt="Imagen"
             className="imageGalleryItem"
           />
         </Grid>
-        <Grid item xs={4}>
+        <Grid justifyContent="center" item xs={12} sm={6} md={4}>
           <img
             src="assets/images/galeriadefotos3.png"
             alt="Imagen"

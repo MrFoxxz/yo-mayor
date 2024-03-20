@@ -4,10 +4,10 @@ const BackgroundImageContainer = ({ imageUrl, children }) => {
   const containerStyle = {
     backgroundImage: `url(${imageUrl})`,
     backgroundSize: "cover",
-    backgroundPosition: "center",
+    // backgroundPosition: "center",
     // width: "100vw",
-    height: "calc(100vh - 100px)",
-    display: "flex",
+     height: "calc(100vh - 100px)",
+     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   };
