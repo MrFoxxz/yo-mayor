@@ -188,6 +188,49 @@ const Contact = () => {
             lectura y cartillas académicas.
           </p>
         </InfoContainer>
+        <InfoContainer
+          img1="assets/images/historiasenyomayor7.jpg"
+          img2="assets/images/quienesomos7.png"
+          year="2020"
+        >
+          <p>
+            En la primera edición de la Escuela Virtual se capacitaron 200
+            adultos mayores. Se publicaron 52 cuentos escritos en un libro
+            llamado Heptamerón: memorias de una cuarentena creativa. También
+            asistieron 9630 personas a los clubes de lectura y 16.500 a los
+            conversatorios. Además, de cada encuentro semanal, se recogieron
+            testimonios en el podcast Relatos Sonoros en Yo Mayor. La Escuela
+            tuvo un gran alcance nacional, y contó con la participación de
+            personas de Chile, Perú, República Dominicana, Argentina y
+            Venezuela.
+          </p>
+        </InfoContainer>
+        <InfoContainer
+          img1="assets/images/historiasenyomayor8.jpg"
+          img2="assets/images/quienesomos8.png"
+          year="2021"
+          inverse
+        >
+          <p>
+            En este año 176 adultos mayores de Uruguay, Perú, México, Venezuela
+            y distintos departamentos de Colombia participaron en la Escuela. 57
+            de los cuentos que fueron fruto de su trabajo se recogieron en el
+            Segundo Heptamerón. 9700 personas asistieron a los clubes de lectura
+            y 16.000 a los conversatorios.
+          </p>
+        </InfoContainer>
+        <InfoContainer
+          img1="assets/images/historiasenyomayor9.jpg"
+          img2="assets/images/quienesomos9.png"
+          year="2022"
+        >
+          <p>
+            En el 2022 se publicó el Tercer Heptamerón, con 67 historias
+            escritas en la Escuela Virtual, que capacitó a 195 personas mayores
+            de Colombia, Venezuela, Uruguay y Panamá. En esa edición los clubes
+            de lectura tuvieron 4725 asistentes y los conversatorios, 3000.
+          </p>
+        </InfoContainer>
       </div>
     </div>
   );
