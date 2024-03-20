@@ -81,115 +81,146 @@ const Home = () => {
       </div>
       <br />
 
-      <div className="sectionTitle">Impacto: personas y ciudades</div>
-
       <div
-        className="HContainer"
-        style={{ alignItems: "center", justifyContent: "space-around" }}
+        className="VContainer"
+        style={{
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
-        <img
-          src="assets/images/impactopersonas.png"
-          alt="Imagen"
-          className="imageStyle"
-        />
+        <div className="sectionTitle">Impacto: personas y ciudades</div>
         <div
-          className="VContainer"
-          style={{
-            alignItems: "center",
-            // width: "50%",
-            justifyContent: "center",
-          }}
+          className="HContainer"
+          style={{ alignItems: "center", justifyContent: "space-around" }}
         >
-          <p className="blueSubtitle">Concurso</p>
-          <div className="HContainer">
-            <IconInfoCard
-              imageUrl="assets/icons/icono3.png"
-              number="5.487"
-              text="concursantes"
-            />
-            <IconInfoCard
-              imageUrl="assets/icons/icono1.png"
-              number="19"
-              text="ciudades /
+          <img
+            src="assets/images/impactopersonas.png"
+            alt="Imagen"
+            className="imageStyle"
+          />
+          <div
+            className="VContainer"
+            style={{
+              alignItems: "center",
+              // width: "50%",
+              justifyContent: "center",
+            }}
+          >
+            <p className="blueSubtitle">Concurso</p>
+            <div className="HContainer">
+              <IconInfoCard
+                imageUrl="assets/icons/icono3.png"
+                number="5.487"
+                text="concursantes"
+              />
+              <IconInfoCard
+                imageUrl="assets/icons/icono1.png"
+                number="19"
+                text="ciudades /
               municipios de
               Colombia"
-            />
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        className="HContainer"
-        style={{ alignItems: "center", justifyContent: "space-around" }}
-      >
         <div
-          className="VContainer"
-          style={{
-            alignItems: "center",
-            // width: "50%",
-            justifyContent: "center",
-          }}
+          className="HContainer"
+          style={{ alignItems: "center", justifyContent: "space-around" }}
         >
-          <p className="blueSubtitle">Escuela virtual</p>
-          <div className="HContainer">
-            <IconInfoCard
-              imageUrl="assets/icons/icono3.png"
-              number="35.500"
-              text="asistentes al
+          <div
+            className="VContainer"
+            style={{
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <p className="blueSubtitle">Escuela virtual</p>
+            <div className="HContainer">
+              <IconInfoCard
+                imageUrl="assets/icons/icono3.png"
+                number="35.500"
+                text="asistentes al
               conversatorio"
-            />
-            <IconInfoCard
-              imageUrl="assets/icons/icono1.png"
-              number="24.055"
-              text="asistentes al
+              />
+              <IconInfoCard
+                imageUrl="assets/icons/icono1.png"
+                number="24.055"
+                text="asistentes al
               club de lectura"
-            />
-          </div>
-          <div className="HContainer">
-            <IconInfoCard
-              imageUrl="assets/icons/icono3.png"
-              number="121"
-              text="departamentos
+              />
+            </div>
+            <div className="HContainer">
+              <IconInfoCard
+                imageUrl="assets/icons/icono3.png"
+                number="121"
+                text="departamentos
               de Colombia"
-            />
-            <IconInfoCard
-              imageUrl="assets/icons/icono1.png"
-              number="8"
-              text="países"
-            />
+              />
+              <IconInfoCard
+                imageUrl="assets/icons/icono1.png"
+                number="8"
+                text="países"
+              />
+            </div>
           </div>
+          <img
+            src="assets/images/impactoyciudades.png"
+            alt="Imagen"
+            className="imageStyle"
+          />
         </div>
-        <img
-          src="assets/images/impactoyciudades.png"
-          alt="Imagen"
-          className="imageStyle"
-        />
       </div>
-
-      <div className="sectionTitle">Galería de fotos</div>
-      <Grid container justifyContent="center" spacing={2}>
-        <Grid justifyContent="center" item xs={12} sm={6} md={4}>
-          <img
-            src="assets/images/galeriadefotos1.png"
-            alt="Imagen"
-            className="imageGalleryItem"
-          />
+      <div
+        className="VContainer"
+        style={{
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div className="sectionTitle">Galería de fotos</div>
+        <Grid container justifyContent="center" spacing={2}>
+          <Grid
+            style={{ display: "flex", justifyContent: "center" }}
+            item
+            xs={12}
+            sm={6}
+            md={4}
+          >
+            <img
+              src="assets/images/galeriadefotos1.png"
+              alt="Imagen"
+              className="imageGalleryItem"
+            />
+          </Grid>
+          <Grid
+            style={{ display: "flex", justifyContent: "center" }}
+            item
+            xs={12}
+            sm={6}
+            md={4}
+          >
+            <img
+              src="assets/images/galeriadefotos2.png"
+              alt="Imagen"
+              className="imageGalleryItem"
+            />
+          </Grid>
+          <Grid
+            style={{ display: "flex", justifyContent: "center" }}
+            item
+            xs={12}
+            sm={6}
+            md={4}
+          >
+            <img
+              src="assets/images/galeriadefotos3.png"
+              alt="Imagen"
+              className="imageGalleryItem"
+            />
+          </Grid>
         </Grid>
-        <Grid justifyContent="center" item xs={12} sm={6} md={4}>
-          <img
-            src="assets/images/galeriadefotos2.png"
-            alt="Imagen"
-            className="imageGalleryItem"
-          />
-        </Grid>
-        <Grid justifyContent="center" item xs={12} sm={6} md={4}>
-          <img
-            src="assets/images/galeriadefotos3.png"
-            alt="Imagen"
-            className="imageGalleryItem"
-          />
-        </Grid>
-      </Grid>
+      </div>
 
       <div
         className="VContainer"

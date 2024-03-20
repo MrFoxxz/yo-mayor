@@ -62,7 +62,9 @@ function ResponsiveAppBar() {
               display: { xs: "none", md: "flex" },
             }}
           >
-            <img src="assets/images/logo.png" alt="logo" />
+            <Link to="/">
+              <img src="assets/images/logo.png" alt="logo" />
+            </Link>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -114,7 +116,9 @@ function ResponsiveAppBar() {
               display: { xs: "flex", md: "none" },
             }}
           >
-            <img src="assets/images/logo.png" alt="logo" />
+            <Link to="/">
+              <img src="assets/images/logo.png" alt="logo" />
+            </Link>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>

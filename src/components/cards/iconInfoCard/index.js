@@ -7,9 +7,9 @@ const IconInfoCard = ({ imageUrl, number, text }) => {
     <div className="image-container">
       <Box
         sx={{
-          boxShadow: 3,
+          boxShadow: 10,
           bgcolor: (theme) =>
-            theme.palette.mode === "dark" ? "#101010" : "#fff",
+            theme.palette.mode === "dark" ? "#000" : "#fff",
           color: (theme) =>
             theme.palette.mode === "dark" ? "grey.300" : "grey.800",
           p: 1,
@@ -26,9 +26,9 @@ const IconInfoCard = ({ imageUrl, number, text }) => {
       </Box>
       <Box
         sx={{
-          boxShadow: 3,
+          boxShadow: 10,
           bgcolor: (theme) =>
-            theme.palette.mode === "dark" ? "#101010" : "#fff",
+            theme.palette.mode === "dark" ? "#000" : "#fff",
           color: (theme) =>
             theme.palette.mode === "dark" ? "grey.300" : "grey.800",
           p: 1,
